@@ -1,0 +1,238 @@
+.App {
+  text-align: center;
+}
+
+#background {
+  background-color: #4a0000;
+  background-image: url("https://www.transparenttextures.com/patterns/leather.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+/* navigation */
+
+.ourNav {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5em;
+  align-items: center;
+  z-index: 1;
+}
+
+ul {list-style-type: none;}
+
+
+.logo {
+  color: white;
+  margin-left: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-family: UnifrakturMaguntia;
+  letter-spacing: 5px;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+#links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 75%;
+}
+
+#links a {
+  font-family: "Prociono", "Serif";
+  color: white;
+  
+  font-size: 20px;
+  margin: auto .5em;
+  
+}
+
+#links a:hover {
+  text-decoration: none;
+   color: #337ab7;
+}
+
+.fa-bars {
+  display: none;
+  margin-right: 1em;
+  cursor: pointer;
+  color: lightgray;
+}
+
+.main-view {
+  background-color: #101726;
+  background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  color: white;
+  margin-top: 2em;
+  padding: 10px;
+  border: 7px ridge #B5A642;
+  border-radius: 10px;
+
+
+  -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+}
+
+#links .logout:hover {
+  cursor: pointer;
+}
+
+/* home */
+
+.signup-container {
+  margin-bottom: 2em;
+}
+
+.facebook-signin {
+  margin-top: .5em;
+}
+
+.register-button {
+  width: 12.5em;
+}
+
+.login-button {
+  margin-top: 2em;
+  width: 12.5em;
+  color: black;
+}
+
+
+
+/*Card Search State*/
+
+#card-search {
+  margin: 1em;
+}
+
+.search-form{
+  text-align: center;
+  color: black;
+}
+
+.search-form p {
+  color: white;
+}
+
+.search-form button {
+  margin-left: 1em;
+}
+
+
+.display-row {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.card-display {
+  text-align: center;
+}
+
+.card-stat-display {
+  text-align: left;
+  
+  
+}
+
+.card-stat-display p {
+  width: 75%;
+}
+
+/* Media Queries */
+
+
+@media (max-width: 1024px) {
+
+  #links {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  width: 240px;
+  height: 3em;
+  top: 140px;
+  right: 0px;
+  z-index: 1;
+}
+
+  #links a {
+  font-family: "Prociono", "Serif";
+  color: white;
+  font-size: 20px;
+  
+  padding-bottom: 1em;
+  
+}
+
+  #links a:hover  {
+      color: #337ab7;
+  }
+
+  #links div {
+      padding: 1em 1em;
+      background-color: black;
+  }
+
+#links a:hover {
+  text-decoration: none;
+}
+
+  #links .fa-bars {
+      display: block;
+      color: white;
+      display: block;
+      flex-direction: row;
+      justify-content: flex-end;
+  }
+
+  .fa-bars {
+      display: block;
+  }
+
+}
+
+@media (max-width: 767px) {
+ 
+  .card-stat-display {
+      
+      margin-top: 1em;
+    
+      }
+
+}
+
+@media (max-width: 500px) {
+  .deck-builder-notes {
+      width: 275px;
+  }
+
+  .deck-builder-list {
+      width: 275px;
+  }
+}
+
+
+@media (max-width: 375px) {
+
+/*Card Search Queries */
+
+  .search-form button {
+      margin-top: 2em;
+  }
+
+  .card-stat-display {
+  text-align: center !important;
+  margin-top: 1em;
+
+  }
+
+}
